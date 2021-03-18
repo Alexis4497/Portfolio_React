@@ -1,11 +1,12 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import Accueil from '../components/Accueil';
+
 
 const Home = () => {
     return (
         <div>
-            <Navigation/>
-        
+            <Accueil/>
+            <img src="../../ban.jpg" width="100%" height="100%"></img>
         </div>
     );
 };

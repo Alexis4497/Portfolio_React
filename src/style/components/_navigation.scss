@@ -1,22 +1,24 @@
 .navigation {
-  position: absolute;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
   top: 1rem;
-  left: 1.4rem;
   font-size: 1.4rem;
   line-height: 28px;
-  color: $color-4;
+  color: black;
 
-  &:before {
-    content: '';
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    background: $color-3;
-    top: -150px;
-    left: -160px;
-    z-index: -1;
-    animation: navAnim 20s infinite alternate;
+  li{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .nav-active{
+    
+    background: linear-gradient(90deg,rgb(66,2,194) 0%,rgb(0,78,194) 100%);
 
     @keyframes navAnim {
       50% {
